@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:imagetext="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simdv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:background="@drawable/shape_out_border"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:background="@drawable/shape_in_border"
+            android:layout_margin="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.lenovo.openeye_app.utils.CustomTextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:text="Eyepetizer" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simdv_vague"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorWhite"
+                android:text="分享"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/share_title"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorWhite"
+                android:text="『你的手机已被格式化』"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="30dp"
+                android:background="@color/colorGraylight"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+
+                <ImageButton
+                    android:id="@+id/share_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/FFFFFFFF"
+                    android:src="@drawable/share_qq" />
+
+             <!--   <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/share_qq"
+                    android:textSize="@dimen/sp_15"
+                    android:text="QQ"
+                    android:layout_marginLeft="@dimen/dp_35"/>-->
+
+                <ImageButton
+                    android:id="@+id/share_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/share_qq"
+                    android:layout_marginStart="76dp"
+                    android:layout_toEndOf="@+id/share_qq"
+                    android:background="@color/FFFFFFFF"
+                    android:src="@drawable/share_wechat" />
+
+               <!-- <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/share_qq"
+                    android:text="微信"
+                    android:layout_toRightOf="@id/share_weixin"
+                    android:textSize="@dimen/sp_15" />-->
+
+                <ImageButton
+                    android:id="@+id/share_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/share_wechat"
+                    android:layout_marginStart="80dp"
+                    android:layout_toEndOf="@+id/share_wechat"
+                    android:background="@color/FFFFFFFF"
+                    android:src="@drawable/share_weibo" />
+
+              <!--  <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/share_qq"
+                    android:text="微博"
+                    android:textSize="@dimen/sp_15" />-->
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:background="@color/colorGraylight"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/share_cancel"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

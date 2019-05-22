@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.example.lenovo.openeye_app"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.facebook.fresco:fresco:0.12.0'
+    implementation 'org.xutils:xutils:3.5.0'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation project(':vitamio')
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.android.support:design:27.1.1'
+    //TabLayout控件
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    // Gson解析
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    //glide图片加载框架
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    //OkHttp
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    //Retrofit依赖
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    //卡片布局
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    // 必要依赖，解析json字符所用
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    // 必要依赖，和Rxjava结合必须用到，下面会提到
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.3'
+    // 必要rxjava2依赖
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    // 必要rxandrroid依赖，切线程时需要用到
+
+    implementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.2'
+
+    implementation 'com.shuyu:gsyVideoPlayer-java:6.0.2'
+    implementation 'com.shuyu:gsyVideoPlayer-armv7a:6.0.2'
+    implementation 'com.shuyu:gsyVideoPlayer-arm64:6.0.2'
+
+    //1.1.0 （1.0.5及以前版本的老用户升级需谨慎，API改动过大）
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-21'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-21'
+    //弹幕
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.5.3'
+}

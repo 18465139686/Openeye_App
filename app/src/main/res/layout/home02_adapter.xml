@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<com.example.lenovo.openeye_app.widget.CustomTextView
+        android:id="@+id/tv_home_text"
+        android:layout_marginLeft="@dimen/dp_90"
+        android:text="-Weekend  special-"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"/>
+
+    <com.example.lenovo.openeye_app.widget.CustomTextView
+        android:id="@+id/tv_home_texts"
+        android:text="-Weekend  special-"
+        android:layout_marginLeft="@dimen/dp_90"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40" />
+
+
+
+</LinearLayout>
+
+

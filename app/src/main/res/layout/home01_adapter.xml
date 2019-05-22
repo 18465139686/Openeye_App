@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_205">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/home_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_205" />
+
+        <LinearLayout
+            android:id="@+id/ll_moban"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/boman_selector"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_text"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:gravity="center"
+                    android:text="测试"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_20"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:gravity="center"
+                    android:text="动画  / 16'29"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
