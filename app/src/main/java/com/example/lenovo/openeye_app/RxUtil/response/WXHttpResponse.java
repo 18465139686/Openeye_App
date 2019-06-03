@@ -33,4 +33,7 @@ public class WXHttpResponse<T> {
     public void setNewslist(T newslist) {
         this.newslist = newslist;
     }
+
+
+
 }
