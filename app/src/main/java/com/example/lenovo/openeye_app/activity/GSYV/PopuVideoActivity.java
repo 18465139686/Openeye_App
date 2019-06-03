@@ -115,7 +115,6 @@ public class PopuVideoActivity extends GSYBaseActivityDetail<StandardGSYVideoPla
             public void onSystemUiVisibilityChange(int visibility) {
                 if (visibility == View.SYSTEM_UI_FLAG_VISIBLE) {
                     onWindowFocusChanged(true);
-
                 }
             }
         });
